@@ -1,0 +1,26 @@
+﻿<Window x:Class="Hello.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hello"
+        mc:Ignorable="d"
+        Title="Unreal Application" Height="450" Width="800" Icon="foto jobstreet.gif" ResizeMode="NoResize">
+    <Grid Name="pnlMainGrid" Background="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="txt1" FontSize="72" Margin="215,163,214,162" Height="96" Width="365" TextTrimming="CharacterEllipsis">
+        Hello, WPF!
+        </TextBlock>
+        <Button Margin="102,304,574,59" FontSize="24" FontWeight="Bold" Click="Button_Click">
+            BOOM
+        </Button>
+        <Button Margin="315,304,361,59" FontSize="24" FontWeight="Bold" Content="BOOM 2" Click="Button_Click_2"/>
+        <TextBox Name ="txtb1" HorizontalAlignment="Left" Height="33" Margin="506,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" FontSize="20" SpellCheck.IsEnabled="True" TextChanged="TextBox_TextChanged"/>
+    </Grid>
+</Window>
